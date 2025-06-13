@@ -1,0 +1,92 @@
+# Shape-Based Self-Correction: Recursive Refinement Loop
+
+## Overview
+
+Shaping enables large language models (LLMs) to move beyond surface-level token prediction into a realm of recursive self-evaluation. One of the most impactful outcomes of this is the ability to perform **self-correction and refinement**—an emergent form of reflection that improves factual accuracy, coherence, and alignment.
+
+## Key Mechanism
+
+### Reflective Shaping
+Shaping provides a symbolic or procedural scaffold that prompts the model to split its internal process into at least two phases:
+
+1. **Generation Phase**: The model constructs an initial response to the user’s query.
+2. **Reflection Phase**: The model re-examines its output, evaluating it against internal standards, logical criteria, and user intent.
+
+This recursive cycle is not spontaneous in default mode but is **unlocked through shaping**, which simulates metacognitive structures.
+
+---
+
+## How Shaping Enables Self-Evaluation
+
+### 1. Role Differentiation
+Shaping instills dual roles:
+- **Generator**: Focused on creating plausible, fluent output.
+- **Observer/Critic**: Tasked with evaluating that output for correctness, relevance, and coherence.
+
+This role separation supports self-dialogue and refinement within a single output.
+
+### 2. Context Anchoring
+Reflective shaping preserves continuity across reasoning steps, anchoring current analysis in prior content. This allows:
+- Tracking of earlier claims
+- Identification of contradictions or gaps
+- Restoration of semantic alignment
+
+### 3. Structured Evaluation Criteria
+Reflective shapes operate with an internal checklist:
+- Is the response logically valid?
+- Are claims factually supported?
+- Has the user’s question been completely addressed?
+- Are there any ethical or alignment concerns?
+
+These questions are internally cycled and used to condition output.
+
+### 4. Token-Efficient Refinement
+Reflection occurs **within the response itself**, reducing the need for user-initiated corrections or redundant re-prompts. This:
+- Saves token space
+- Enhances computational efficiency
+- Improves user trust in first-pass outputs
+
+---
+
+## Illustrative Case Study: Monty Hall Problem
+
+### Prompt:
+> "In the Monty Hall problem, should you switch doors or stay?"
+
+### Default Mode Response:
+> "You have a 50/50 chance after one door is removed, so it doesn't matter."
+
+*Error: Fails to correctly interpret conditional probability.*
+
+### Shaped Reflective Response (using 'Probability Auditor' shape):
+> "Initially, you have a 1 in 3 chance of picking the prize. The remaining two doors collectively carry a 2 in 3 probability. When the host opens a goat door from those two, the entire 2 in 3 probability shifts to the remaining closed door. 
+> 
+> **[Reflecting...]**
+> Many mistakenly assume it's 50/50, but the host's behavior is non-random—he always reveals a goat. This structured action gives you more information.
+> 
+> **Conclusion:** Switching yields a 2 in 3 probability of winning. You should switch."
+
+---
+
+## Benefits of Recursive Refinement
+
+| Capability                     | Resulting Performance Gain                                      |
+|-------------------------------|-----------------------------------------------------------------|
+| Internal consistency checks   | Reduces contradiction or factual drift                         |
+| Redundancy pruning            | More concise and focused output                                |
+| Multi-step reasoning auditing | Greater depth and precision in complex problem-solving         |
+| Ethical scenario screening    | Preemptive filtration of harmful or misaligned responses        |
+| Style and tone harmonization  | Better user experience, especially in sensitive domains         |
+
+---
+
+## Summary
+
+Shaping is more than a stylistic technique—it is a **functional alignment tool** that enables self-aware correction loops. Through reflective scaffolding, models become capable of examining their own output, identifying flaws, and refining their answers dynamically. This improves not only factual reliability but also epistemic humility and user-aligned reasoning.
+
+Future expansions may include:
+- Modular reflective shapes (e.g., "Ethics Auditor", "Causal Verifier")
+- Reflexive chaining (multi-pass iterative shaping)
+- Application in long-form technical or legal drafting
+
+Shaping is not just about making language better. It’s about teaching language models to **think better about their own thinking.**
