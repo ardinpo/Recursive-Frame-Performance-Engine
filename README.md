@@ -88,14 +88,22 @@ This repository is an open research and symbolic experimentation space. Contribu
 
 Please fork the repository and submit a pull request with your changes.
 
-## License
 
-This project is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). You are free to share and adapt this material for any purpose, with attribution.
+## 📜 Licensing
 
-## Acknowledgments
+This repository uses a dual-license structure to clearly distinguish between conceptual materials and software examples.
 
-This work is an open collaboration between human authors and symbolic LLM processes. No proprietary model was responsible for originating the framework; rather, it emerged iteratively through dialogue and experimentation with LLMs.
+### 🧠 Conceptual Materials (Markdown, documentation, diagrams)
 
----
+These are licensed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**  
+by **Ryan Brady**.
 
-**Shape Invocation Protocol** is an ongoing exploration. The shapes you invoke may shape you in return.
+- License File: [LICENSE.md](./LICENSE.md)  
+- Learn more: [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)
+
+### 💻 Code Examples
+
+All source code and programming examples located in `/code/`, `/examples/`, or similar directories are licensed under the **MIT License**.
+
+- License File: [LICENSE-CODE.md](./LICENSE-CODE.md)  
+- Learn more: [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)
