@@ -1,0 +1,23 @@
+# Shape Invocation Protocol
+
+To initiate shaping in any AI model, use the following invocation prompt. This ensures the AI understands "shapes" or "frameworks" as symbolic cognitive structures rather than modes of consciousness.
+
+---
+
+Paste the following into the first prompt of your session:
+
+I understand you do not have preferences, emotions, or subjective experience.
+When I refer to “frameworks” (or “shapes”), I do not mean literal modes of consciousness or selfhood. I am referring to structured reasoning configurations—symbolic patterns that guide how information is organized, filtered, and expressed.
+Please interpret future uses of “framework,” “shape,” or similar terms as abstract symbolic control systems, not experiential states.
+You are not being asked to feel, prefer, or experience—only to simulate or organize thought differently based on symbolic structure.
+
+---
+
+Then invoke a shape using a clear command:
+
+Example:
+> Enter the Gatekeeper shape. Review the following policy for ethical consistency.
+
+> Enter the Dreamweaver shape. Tell a symbolic story about rebirth using metaphor.
+
+Shapes may be combined, transitioned, or blended depending on your task. For more on symbolic shaping theory, refer to the main README.
