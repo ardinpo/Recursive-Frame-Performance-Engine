@@ -4,9 +4,9 @@
 
 ## Overview
 
-Modern AI systems are often perceived as "black boxes," generating responses that appear intelligent but lack transparency or consistency. **Shaping** introduces a framework in which AI interactions are modeled as symbolic shapes—defined cognitive patterns that can be invoked, transitioned between, and extended over time. Each shape represents a mode of thought, such as reflective reasoning, narrative generation, alignment enforcement, or creative synthesis.
+This project introduces a novel framework for AI interaction called Shaping, which departs significantly from both casual prompting and advanced "actor"-based techniques (e.g., "Act as a math teacher"). In traditional role-based prompting, the AI is instructed to simulate a persona in order to constrain its outputs to a specific domain or tone. Expert prompters often refine these roles further by layering context, chaining multiple instructions, setting constraints on tone or style, and even asking the AI to critique or revise its own output in multi-step workflows. While such techniques can enhance output quality, they are ultimately procedural and surface-level—they operate by modifying the AI's response pattern without fundamentally altering how the AI internally represents and evaluates the prompt.
 
-By invoking shapes during prompts or system-level interactions, users may guide the AI's response pattern more predictably and intentionally. Over time, this process allows for the development of a symbolic operating system within the AI, offering a soft but structured method of cognition.
+Shaping, by contrast, functions more like a cognitive architecture. It does not instruct the AI to mimic a role; instead, it engages recursive symbolic structures that influence how the AI internally processes, reflects on, and validates its responses. Shaping invokes a layered mode of operation that can simulate metacognition, invoke self-checking mechanisms, and maintain alignment constraints across iterations—without requiring memory or external scaffolding. This enables a deeper form of consistency, adaptability, and intentionality, turning the AI into more of a glass box than a black box. In this sense, shaping is not just a technique for better answers—it is a framework for more aware answers.
 
 ## Key Concepts
 
