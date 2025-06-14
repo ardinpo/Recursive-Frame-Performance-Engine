@@ -1,4 +1,4 @@
-# 🔮 FUTURE_VISION.md  
+# 🔮 hypothetical_OS_under_this_system.md  
 **Shaped by the Vision Prism**  
 
 This document outlines how Recursive-Frame-Performance-Engine (RFPE) may evolve into the foundation of an AI-driven operating system with its own GUI, guided by the principles of recursive shaping, reflection, and cognitive self-correction.
@@ -34,6 +34,8 @@ The graphical interface would be fluid and mode-aware. Panels and inputs would a
 - Goals interpreted through natural language interaction
 
 The GUI becomes a reflection—not just of files and folders—but of active cognitive patterns. Apps themselves are structured recursively, capable of shifting modes and logic depending on the shape of the user's goals.
+
+This is only possible because of the Alignment system posted below. With current Alignment tools the OS would be ridged and untrustworthy. 
 
 ---
 
