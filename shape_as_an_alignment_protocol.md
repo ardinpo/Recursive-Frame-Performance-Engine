@@ -87,3 +87,6 @@ Shapes may form the outer scaffolding of more formal alignment architectures. Po
 Shapes represent more than a method of behavioral control—they are a lightweight form of *cognitive governance*. By bounding the roles that a model can simulate, shapes create alignment both *at the surface* (output level) and *at the root* (intent-formation level). They serve as constraints not just on what the AI can say, but on the kind of agent it is allowed to become within a given invocation.
 
 This dual function—of controlling behavior and preventing misaligned behavioral tendencies from forming—makes shapes a vital conceptual tool in the broader alignment landscape. While not a complete solution, they offer a path toward structured, user-defined, scalable alignment mechanisms for increasingly complex systems.
+
+Next Step — Alignment by Contract
+For readers who want a systems-level specification of how signed shape registries, privilege flags, and audit ledgers can turn this conceptual framework into an OS-ready safety layer, see alignment_by_contract.md in the same repository.
