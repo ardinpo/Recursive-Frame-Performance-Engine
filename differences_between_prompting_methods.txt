@@ -1,0 +1,76 @@
+# 🧠 Cognitive Loop Prompts: Recursive Thinking in a Single Prompt
+
+## Overview
+This document introduces the concept of the **Cognitive Loop Prompt**, a novel prompting method that enables recursive reasoning in advanced language models using only a **single prompt message**. Unlike conventional prompting methods that rely on multi-step chains, agent scaffolding, or external feedback systems, Cognitive Loop Prompts operate entirely within a single inference window.
+
+This document focuses on how **Cognitive Loop Prompts differ from other prompting paradigms**, including Chain-of-Thought (CoT), ReAct, AutoGPT, and traditional role-based prompting.
+
+---
+
+## 🔄 Key Properties of Cognitive Loop Prompts
+
+- **Single-shot recursion**: Entire reasoning cycle is embedded in one prompt.
+- **No toolchain dependency**: Works without external memory, agent frameworks, or orchestrators.
+- **Self-contained loop**: Prompt includes reflection, iteration, and termination criteria.
+- **Model-agnostic**: Applicable to any sufficiently capable LLM.
+
+---
+
+## 🧭 What Makes It Different?
+
+### 1. **Recursive Thinking Without Multi-Turn Prompts**
+Traditional recursive methods require user intervention or controller logic to simulate iteration. Cognitive Loop Prompts embed this logic directly into the prompt, allowing the model to reprocess its output internally.
+
+### 2. **No External Scaffolding Required**
+- **AutoGPT**, **LangChain**, and similar frameworks rely on external codebases, memory, and agents to coordinate AI behavior.
+- **Cognitive Loop Prompts** work in standalone sessions—no API hooks, no persistent memory, no agents.
+
+### 3. **Behavioral Modulation is Internal, Not Role-Based**
+- Role prompting ("Act as a math teacher") provides a **surface-level tone or function**.
+- In contrast, a Cognitive Loop Prompt encodes a **cognitive process**, not just a persona—resulting in structured, layered thought.
+
+### 4. **Explicit Loop Logic**
+- Chain-of-Thought prompting encourages models to reason step-by-step but lacks iterative self-correction.
+- ReAct enables feedback-based interaction with environments, but requires multi-round control.
+- Cognitive Loop Prompts embed revision triggers directly in the prompt, enabling:
+  - Self-critique
+  - Rewriting
+  - Stopping conditions
+
+---
+
+## 📊 Method Comparison Table
+
+| Method                    | Recursive? | Self-contained? | Requires Tools? | Behavior Modulation | Prompt Count |
+|--------------------------|------------|------------------|------------------|----------------------|---------------|
+| Chain-of-Thought (CoT)   | No         | Yes              | No               | Light (linear logic) | One            |
+| ReAct                    | Yes        | No               | Yes              | Moderate (feedback)  | Many           |
+| AutoGPT / LangChain      | Yes        | No               | Yes              | High (agent chains)  | Many           |
+| Role Prompting           | No         | Yes              | No               | Shallow (tone only)  | One            |
+| **Cognitive Loop Prompt**| ✅ Yes     | ✅ Yes           | ❌ No            | ✅ Deep (recursive logic) | One        |
+
+---
+
+## 📐 Example Prompt
+```text
+Reflect recursively on the following argument. For each iteration, identify a weakness, suggest a refinement, and reassess. Repeat this loop until no further improvement is possible. 
+
+"Artificial intelligence cannot be trusted to make moral decisions."
+```
+
+---
+
+## 🧬 Summary
+Cognitive Loop Prompts represent a minimalist yet powerful prompting method that:
+- Enables recursive reasoning without chaining
+- Operates independently of external tooling
+- Encodes a structured cognitive process in a single message
+- Differs from role prompting by creating *behavioral* depth, not just tone or style
+
+This method can integrate with larger AI systems via **Shapes, Frameworks, and Geometries**, but it can also operate independently, showcasing its flexibility.
+
+> For integration examples and more advanced uses, see the related documents in this repository.
+
+---
+
+*This project is independent and exploratory in nature, and not affiliated with any institutional AI labs.*

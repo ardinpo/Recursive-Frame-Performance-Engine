@@ -1,0 +1,76 @@
+# 🖥️ Code Runtime Guidance for Cognitive Loop Prompts
+
+## Overview
+The **Cognitive Loop Prompt** method enables recursive reasoning and code refinement entirely within a single prompt message. While it is effective across many reasoning domains, **programming tasks involving real-world systems benefit significantly when this method is paired with a local code execution environment or runtime plugin.**
+
+This document provides guidance on how to safely and effectively integrate execution capabilities with Cognitive Loop Prompts during software development workflows.
+
+---
+
+## 🔍 Why Local Execution Matters
+
+Language models, including GPT-4 and similar systems, can generate code with high accuracy—but without access to your local system, they cannot:
+- Detect runtime errors (e.g., syntax, environment-specific exceptions)
+- Understand system-specific dependencies
+- Verify successful file access or permissions
+
+When **Cognitive Loop Prompts** are used in combination with runtime tools, the model can observe output and recursively refine its logic based on execution feedback—closing the gap between theoretical code and working software.
+
+---
+
+## 🔌 Recommended Execution Tools
+
+| Tool / Plugin                 | Description                                                                 |
+|-------------------------------|-----------------------------------------------------------------------------|
+| **OpenInterpreter**           | Connects GPT to local Python runtime with execution + result feedback       |
+| **VS Code + Code Runner**     | Allows quick manual execution of AI-generated code blocks inside the editor |
+| **Jupyter Notebooks**         | Interactive refinement + testing via loop prompts inside notebook cells     |
+| **Python Virtual Environments** | Ensures isolated, safe testing of AI-generated scripts                     |
+| **Obsidian + Code Runner Plugin** | Markdown + AI prompting + executable code blocks in local files        |
+
+---
+
+## 🌿 Safety Through Garden Shape
+
+When using loop prompts with code execution, it is strongly advised to pair them with the **Garden Shape**—a protective behavior constraint that:
+- Blocks dangerous operations (e.g., `os.remove()`, `eval()`, `wget`, `pip install`)
+- Denies ambiguous edge cases by default
+- Requires justification or recursion toward a safer alternative when risk is detected
+
+> The Garden Shape treats your system as a living environment: it may read, map, or cultivate—but never destroy.
+
+---
+
+## ⚠️ Security & Edge Case Handling
+
+| Risk Category             | Guidance                                                              |
+|---------------------------|-----------------------------------------------------------------------|
+| File deletions/modifications | Block or redirect unless explicitly approved                         |
+| Shell commands (`os.system`) | Avoid unless whitelisted and auditable                               |
+| Network requests          | Deny unless explicitly safe and necessary                             |
+| Dynamic execution (`eval`, `exec`) | Fully disallow or gate through multi-layer review                |
+| Writing files             | Only to sandboxed/test paths with clear purpose                       |
+
+Use virtual environments, containers, or restricted user profiles to isolate the impact of AI-generated code.
+
+---
+
+## ✅ Best Practices
+
+- Begin with read-only tasks: listing files, parsing logs, printing summaries
+- Test loop prompts in Jupyter before using automatic tools
+- Log every output from recursive loops for traceability
+- Run in a sandbox (e.g., Docker or local VM) when experimenting with open-ended tasks
+
+---
+
+## 🧩 Future Extensions
+
+Planned integration ideas:
+- Garden Shape auto-detection using regex/syntax filters
+- OpenInterpreter plugin that applies Loop Prompt reflection after each error
+- Confidence estimators that guide loop termination based on runtime feedback
+
+---
+
+*This runtime guidance supports the safe deployment of Cognitive Loop Prompts in real-world programming environments. All execution integrations are optional but recommended for reliability and depth.*
