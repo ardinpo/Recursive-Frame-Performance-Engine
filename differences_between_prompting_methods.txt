@@ -56,9 +56,25 @@ Traditional recursive methods require user intervention or controller logic to s
 Reflect recursively on the following argument. For each iteration, identify a weakness, suggest a refinement, and reassess. Repeat this loop until no further improvement is possible. 
 
 "Artificial intelligence cannot be trusted to make moral decisions."
-```
 
----
+Iteration 1:
+- Weakness: The statement is overly broad and lacks context. It does not specify what kind of moral decisions or under what conditions.
+- Refinement: "Artificial intelligence, lacking human empathy and experiential context, may not be reliable in complex moral decisions."
+- Reassessment: This version narrows the concern and highlights the AI's lack of lived experience as the root issue.
+
+Iteration 2:
+- Weakness: It assumes that empathy and experience are necessary for all moral decisions, which may not hold for rule-based or utilitarian frameworks.
+- Refinement: "Artificial intelligence, while capable of rule-based ethical reasoning, may struggle with context-sensitive or emotionally nuanced moral decisions."
+- Reassessment: Now the argument admits that AI has some moral capacity but is limited in scope.
+
+Iteration 3:
+- Weakness: It still implies that emotional nuance is essential to all moral contexts, but this may depend on the ethical system being applied.
+- Refinement: "Artificial intelligence can simulate certain ethical frameworks (e.g., utilitarianism) but lacks subjective grounding, making it ill-suited for decisions requiring empathy or virtue ethics."
+- Reassessment: The argument now distinguishes between types of moral reasoning and acknowledges where AI excels and where it does not.
+
+Final Statement (Iteration 4):
+- No major weaknesses remain without expanding into speculative metaphysics or niche edge cases.
+- Final Form: "Artificial intelligence can execute certain moral reasoning systems algorithmically but lacks subjective grounding, which limits its trustworthiness in decisions involving empathy, intuition, or human values."
 
 ## 🧬 Summary
 Cognitive Loop Prompts represent a minimalist yet powerful prompting method that:
